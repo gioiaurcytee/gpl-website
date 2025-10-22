@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gioi’s Perinatal Lounge | A Maternal Wellness Talk Show</title>
+
+  <meta name="description" content="A calm, community-centered talk series bridging real conversations around birth, healing, and family. Hosted by Gioi AurcyTeē." />
+  <meta property="og:title" content="Gioi’s Perinatal Lounge" />
+  <meta property="og:description" content="Real stories. Real families. Recorded live." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/lounge-set.jpg" />
+  <link rel="icon" href="favicon.ico" />
+
+  <style>
+    :root{
+      --navy:#1e2a44;
+      --kelly:#2fb463;
+      --sand:#e9d8b7;
+      --lav:#c9b6ee;
+      --ink:#0f172a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);line-height:1.6}
+    a{color:var(--navy);text-decoration:none}
+    h1,h2,h3{color:var(--navy)}
+
+    /* ---------- HEADER ---------- */
+    header{
+      background:linear-gradient(0deg,#0005,#0005),
+                 url('images/beach-header.jpg') center/cover no-repeat;
+      color:#fff;
+      text-align:center;
+      padding:5rem 1rem 6rem;
+    }
+    header h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem}
+    header p{max-width:700px;margin:0 auto 1.5rem;color:#f3f5ff}
+    header a.btn{
+      background:var(--kelly);color:#fff;font-weight:700;
+      padding:0.8rem 1.4rem;border-radius:8px;display:inline-block;
+    }
+
+    /* ---------- NAV ---------- */
+    nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;padding:0.8rem 1rem;z-index:1000}
+    nav ul{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;list-style:none}
+    nav a{font-weight:600}
+
+    /* ---------- SECTIONS ---------- */
+    section{padding:3.5rem 1rem;max-width:1000px;margin:auto}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+    .two-col img{width:100%;border-radius:12px}
+    @media(max-width:750px){.two-col{grid-template-columns:1fr}}
+
+    /* ---------- CARDS ---------- */
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .card{border:1px solid #e3e3e9;border-radius:12px;overflow:hidden;background:#fff}
+    .card img{width:100%;height:200px;object-fit:cover}
+    .card .pad{padding:1rem}
+    .badge{display:inline-block;padding:0.25rem 0.6rem;border-radius:20px;background:var(--sand);font-size:0.8rem;font-weight:700;color:#2f3a4f;margin-bottom:0.4rem}
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter{background:linear-gradient(180deg,var(--sand),#fff);text-align:center}
+    form{display:flex;justify-content:center;flex-wrap:wrap;gap:0.6rem;margin-top:1rem}
+    input[type="email"]{padding:0.8rem 1rem;border:1px solid #bbb;border-radius:8px;min-width:260px}
+    button{background:var(--navy);color:#fff;border:none;padding:0.8rem 1.2rem;border-radius:8px;font-weight:700}
+
+    /* ---------- FOOTER ---------- */
+    footer{background:var(--navy);color:#d7dded;text-align:center;padding:1.5rem 1rem;margin-top:2rem}
+    footer a{color:#d7dded;font-weight:600}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#episodes">Episodes</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#newsletter">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>The Perinatal Lounge</h1>
+    <p>A maternal wellness talk series hosted by Gioi AurcyTeē — bringing calm, authentic conversations to the birth and family journey.</p>
+    <a href="https://youtube.com/@gioisperinatallounge" class="btn" target="_blank" rel="noopener">Watch on YouTube</a>
+  </header>
+
+  <section id="about">
+    <div class="two-col">
+      <div>
+        <h2>What the Lounge Offers</h2>
+        <p>We create space for transparent conversations around pregnancy, birth, postpartum, and the transitions that shape family life. Each episode blends storytelling, practical insight, and community connection — recorded live in a cozy, welcoming lounge environment.</p>
+        <ul style="margin-top:1rem;list-style:disc;padding-left:1.5rem">
+          <li>Real stories from parents and professionals</li>
+          <li>Guidance rooted in empathy and expertise</li>
+          <li>Resources to support emotional and physical recovery</li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/lounge-set.jpg" alt="The Gioi’s Perinatal Lounge set with chairs and palm plants">
+      </div>
+    </div>
+  </section>
+
+  <section id="episodes">
+    <h2 style="text-align:center;margin-bottom:1.5rem">Recent Episodes</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/ep1.jpg" alt="Episode 1 cover">
+        <div class="pad">
+          <span class="badge">S1 • EP01</span>
+          <h3>Finding Support in Early Postpartum</h3>
+          <p>Practical guidance for healing weeks 1–6 and building your support system.</p>
+          <a href="https://youtube.com/watch?v=YOUR_VIDEO1" target="_blank" rel="noopener">Watch Episode →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/ep2.jpg" alt="Episode 2 cover">
+        <div class="pad">
+          <span class="badge">S1 • EP02</span>
+          <h3>Feeding Choices Without Pressure</h3>
+          <p>Conversations that honor every feeding journey — breast, bottle, or both.</p>
+          <a href="https://youtube.com/watch?v=YOUR_VIDEO2" target="_blank" rel="noopener">Watch Episode →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/ep3.jpg" alt="Episode 3 cover">
+        <div class="pad">
+          <span class="badge">S1 • EP03</span>
+          <h3>Mental Health Check-Ins That Help</h3>
+          <p>Simple ways to track your emotional wellness and recognize when to reach out.</p>
+          <a href="https://youtube.com/watch?v=YOUR_VIDEO3" target="_blank" rel="noopener">Watch Episode →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="events" style="background:var(--lav)">
+    <h2 style="text-align:center;margin-bottom:1rem">Upcoming Event</h2>
+    <div class="two-col" style="align-items:center">
+      <div>
+        <h3>Season 1 Reunion Tea Party — Live Recording</h3>
+        <p><strong>Date:</strong> Saturday · November 23 · 12 PM – 2 PM<br>
+           <strong>Location:</strong> Triad, NC</p>
+        <p style="margin-top:1rem">Join us for conversation, connection, and a live filming of The Perinatal Lounge Season 1 Reunion.</p>
+        <a href="https://eventbrite.com/your-rsvp-link" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem;background:var(--navy);color:#fff;padding:0.8rem 1.4rem;border-radius:8px;font-weight:700">Reserve Your Seat</a>
+      </div>
+      <div>
+        <img src="images/event-room.jpg" alt="Event setup with lounge chairs and backdrop">
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Stay Connected</h2>
+    <p>Be the first to hear about new episodes and live recordings.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="email" class="sr-only">Email</label>
+      <input type="email" name="email" id="email" placeholder="you@example.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Gioi AurcyTeē | Gioi’s Perinatal Lounge</p>
+    <p><a href="https://youtube.com/@gioisperinatallounge" target="_blank" rel="noopener">YouTube</a> · <a href="https://instagram.com/YOURHANDLE" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@your-domain.com">Email</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
