@@ -1,0 +1,17 @@
+FN:Gioi AurcyTeē
+ORG:Perinatal M.A.P.P.S.
+TITLE:Doula
+TEL;TYPE=CELL:1234567890
+EMAIL:hello@example.com
+URL:https://gioiaurcytee.com
+END:VCARD`;
+
+    QRCode.toCanvas(document.getElementById('qrcode'), vcard, {
+      width: 220
+    }, function (error) {
+      if (error) console.error(error);
+    });
+  </script>
+
+</body>
+</html>
