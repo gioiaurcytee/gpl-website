@@ -1,19 +1,20 @@
 :root {
   --navy: #1c2d4a;
-  --navy-deep: #132238;
+  --navy-deep: #121f33;
+
   --light-blue: #d8e9f7;
-  --light-blue-2: #edf6fd;
-  --brown: #765747;
-  --brown-soft: #a5806b;
+  --light-blue-soft: #edf6fd;
+
+  --brown: #7a5a48;
+  --brown-soft: #a07a65;
+
   --cream: #fbf7f2;
-  --sand: #efe4d7;
-  --gold: #c7aa78;
-  --pearl: #f8f6f2;
-  --text: #222222;
   --white: #ffffff;
-  --leopard-dark: #4c3429;
-  --leopard-mid: #8c644f;
-  --leopard-light: #d4b49a;
+
+  --gold: #c7aa78;
+  --pearl: #f5f2ec;
+
+  --text: #1f1f1f;
   --shadow: 0 16px 40px rgba(28, 45, 74, 0.12);
   --radius: 20px;
   --max-width: 1180px;
@@ -33,7 +34,7 @@ body {
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(216, 233, 247, 0.45), transparent 22%),
-    linear-gradient(to bottom, #fcfaf7, #f8f2eb);
+    linear-gradient(to bottom, #fcfaf7, #f7fbff);
   line-height: 1.65;
 }
 
@@ -75,7 +76,7 @@ a {
   height: 14px;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 30% 30%, #fff, #f1ece5 45%, #d9d0c5 80%);
+    radial-gradient(circle at 30% 30%, #ffffff, #f1ece5 45%, #d9d0c5 80%);
   box-shadow: 0 0 0 4px rgba(216, 233, 247, 0.55);
 }
 
@@ -109,9 +110,9 @@ a {
   display: flex;
   align-items: center;
   background:
-    linear-gradient(120deg, rgba(19, 34, 56, 0.92), rgba(28, 45, 74, 0.78)),
-    radial-gradient(circle at right top, rgba(216, 233, 247, 0.22), transparent 25%),
-    linear-gradient(135deg, rgba(118, 87, 71, 0.18), rgba(216, 233, 247, 0.08));
+    linear-gradient(120deg, rgba(18, 31, 51, 0.95), rgba(28, 45, 74, 0.85)),
+    radial-gradient(circle at right top, rgba(216, 233, 247, 0.35), transparent 35%),
+    linear-gradient(135deg, rgba(216, 233, 247, 0.12), rgba(122, 90, 72, 0.08));
   color: var(--white);
 }
 
@@ -124,7 +125,7 @@ a {
   height: 360px;
   border-radius: 50%;
   background:
-    radial-gradient(circle, rgba(216, 233, 247, 0.18), rgba(216, 233, 247, 0.02) 70%);
+    radial-gradient(circle, rgba(216, 233, 247, 0.22), rgba(216, 233, 247, 0.04) 70%);
 }
 
 .hero::after {
@@ -132,7 +133,7 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(199, 170, 120, 0.09) 0%, transparent 25%),
+    linear-gradient(90deg, rgba(216, 233, 247, 0.08) 0%, transparent 25%),
     linear-gradient(to top, rgba(0, 0, 0, 0.12), transparent 35%);
   pointer-events: none;
 }
@@ -199,9 +200,9 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--gold), #d8c09a);
-  color: var(--navy-deep);
-  box-shadow: 0 10px 24px rgba(199, 170, 120, 0.22);
+  background: linear-gradient(135deg, var(--navy), var(--light-blue));
+  color: var(--white);
+  box-shadow: 0 10px 24px rgba(28, 45, 74, 0.22);
 }
 
 .btn-primary:hover {
@@ -298,7 +299,7 @@ a {
   padding: 30px;
   background:
     linear-gradient(var(--white), var(--white)) padding-box,
-    linear-gradient(135deg, var(--leopard-light), var(--leopard-mid), var(--leopard-dark)) border-box;
+    linear-gradient(135deg, var(--light-blue), var(--navy), var(--brown-soft)) border-box;
   border: 2px solid transparent;
 }
 
@@ -308,12 +309,12 @@ a {
   inset: 12px;
   border-radius: calc(var(--radius) - 8px);
   pointer-events: none;
-  opacity: 0.1;
+  opacity: 0.06;
   background-image:
-    radial-gradient(ellipse at 20% 25%, var(--leopard-dark) 0 18%, transparent 20%),
-    radial-gradient(ellipse at 70% 30%, var(--leopard-mid) 0 16%, transparent 18%),
-    radial-gradient(ellipse at 40% 70%, var(--leopard-dark) 0 14%, transparent 16%),
-    radial-gradient(ellipse at 82% 72%, var(--leopard-mid) 0 14%, transparent 16%);
+    radial-gradient(ellipse at 20% 25%, var(--navy) 0 18%, transparent 20%),
+    radial-gradient(ellipse at 70% 30%, var(--brown-soft) 0 16%, transparent 18%),
+    radial-gradient(ellipse at 40% 70%, var(--navy) 0 14%, transparent 16%),
+    radial-gradient(ellipse at 82% 72%, var(--brown-soft) 0 14%, transparent 16%);
 }
 
 .info-card h3 {
@@ -332,7 +333,7 @@ a {
 
 .topics {
   background:
-    linear-gradient(to bottom, rgba(216, 233, 247, 0.28), rgba(251, 247, 242, 0.78));
+    linear-gradient(to bottom, rgba(216, 233, 247, 0.45), rgba(251, 247, 242, 0.8));
 }
 
 .card-grid {
@@ -345,9 +346,9 @@ a {
 .topic-card {
   position: relative;
   padding: 28px 24px 24px;
-  border: 1px solid rgba(28, 45, 74, 0.06);
+  border: 1px solid rgba(28, 45, 74, 0.08);
   background:
-    linear-gradient(180deg, #ffffff, #fcfaf7);
+    linear-gradient(180deg, #ffffff, var(--light-blue-soft));
 }
 
 .card-accent {
@@ -356,7 +357,12 @@ a {
   height: 4px;
   border-radius: 999px;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, var(--navy), var(--light-blue), var(--brown));
+  background: linear-gradient(
+    90deg,
+    var(--navy),
+    var(--light-blue),
+    var(--navy)
+  );
 }
 
 .topic-card h3 {
@@ -370,7 +376,7 @@ a {
   text-align: center;
   background:
     linear-gradient(135deg, var(--navy-deep), var(--navy)),
-    radial-gradient(circle at top right, rgba(216, 233, 247, 0.14), transparent 26%);
+    radial-gradient(circle at top right, rgba(216, 233, 247, 0.18), transparent 26%);
   color: var(--white);
   position: relative;
   overflow: hidden;
@@ -381,7 +387,7 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent, rgba(199, 170, 120, 0.08), transparent);
+    linear-gradient(90deg, transparent, rgba(216, 233, 247, 0.08), transparent);
   pointer-events: none;
 }
 
@@ -397,7 +403,7 @@ a {
   position: relative;
   padding: 30px;
   background:
-    linear-gradient(180deg, #ffffff, #f6fbff);
+    linear-gradient(180deg, #ffffff, var(--light-blue-soft));
 }
 
 .pearl-border {
